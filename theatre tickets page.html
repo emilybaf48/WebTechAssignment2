@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewpoint content="width-device-width, initia">
+    <meta name="description" content="theatre tickets">
+    <link rel="stylesheet" href="theatre tickets styling.css">
+    <title> theatre tickets </title>
+</head>
+
+<body>
+    <h1>Theatre Tickets</h1>
+    <form id="ticketsForm"> </form>
+        <fieldset>
+         <legend></legend>
+            <div class="dropdown">
+                <button onlick="theatreShow()" class="dropbtn">Dropdown</button>
+                <div id="theatreShow" class="dropdown-content">
+                    <a href="#">Hamilton</a>
+                    <a href="#">Lion King</a>
+                    <a href="#">Miss Siagon</a>
+                    <a href="#">Phatom of the Opera</a>
+                </div>
+            </div>
+
+            <p>
+                <label for="Number Of Tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets"
+                       min="1" required>
+            </p>
+            
+        </fieldset>        
+        <p>
+            <button type="submit" id="calculate"
+                    name="calculate">Calculate</button>
+        </p>
+        
+        <p id="output"></p>
+    </form>
+    
+
+
+
+
+
+    <script src="theatre tickets.js"> </script>
+</body>
